@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{7DC321C5-E317-4874-91A6-A30AAC33744D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestAutomationPractice/Features/Footer.feature">
+    <Files>
+      <File FileName="TestAutomationPractice/Helpers/Utilities.cs" Line="15" Column="10" />
+      <File FileName="TestAutomationPractice/Pages/HomePage.cs" Line="23" Column="1" />
+      <File FileName="TestAutomationPractice/Helpers/Base.cs" />
+      <File FileName="TestAutomationPractice/Pages/FooterPage.cs" Line="1" Column="1" />
+      <File FileName="TestAutomationPractice/Steps/FooterSteps.cs" />
+      <File FileName="TestAutomationPractice/Pages/ContactUsPage.cs" />
+      <File FileName="TestAutomationPractice/Steps/ContactUsSteps.cs" />
+      <File FileName="TestAutomationPractice/Features/Search.feature" />
+      <File FileName="TestAutomationPractice/Steps/SearchSteps.cs" />
+      <File FileName="TestAutomationPractice/Pages/SearchResultsPage.cs" Line="20" Column="6" />
+      <File FileName="TestAutomationPractice/Features/ContactUs.feature" Line="12" Column="1" />
+      <File FileName="TestAutomationPractice/Features/Footer.feature.cs" Line="87" Column="20" />
+      <File FileName="TestAutomationPractice/Features/Footer.feature" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestAutomationPractice" expanded="True">
+            <Node name="TestAutomationPractice" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Features" expanded="True">
+                <Node name="Footer.feature" selected="True" />
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Pages" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TestAutomationPractice" expanded="True">
+            <Node name="TestAutomationPractice" expanded="True">
+              <Node name="TestAutomationPractice.Features" expanded="True">
+                <Node name="FooterFeature" expanded="True">
+                  <Node name="UserCanOpenLinksUnderInformationSection(&quot;About us&quot;,&quot;About us&quot;,null)" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TestAutomationPractice PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
