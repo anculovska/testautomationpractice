@@ -40,11 +40,17 @@ namespace TestAutomationPractice.Helpers
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator)).SendKeys(text);
 
         }
-        
+
         public string ReturnTextFromElement(By locator)
         {
             //return driver.FindElement(locator).Text;
-            return driver.FindElement(locator).GetAttribute("textContent"); 
+            return driver.FindElement(locator).GetAttribute("textContent");
+        }
+
+        public bool ElementIsDisplayed(By locator)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+            return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator)).Displayed;
         }
 
     }
