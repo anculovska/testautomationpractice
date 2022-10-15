@@ -26,8 +26,6 @@ namespace TestAutomationPractice.Steps
             ut.DropdownSelect(cup.subjectHeading, heading);
             ut.EnterTextInElement(cup.contactEmail, ut.GenerateRandomEmail());
             ut.EnterTextInElement(cup.message, message);
-
-
         }
 
         [When(@"user submits the form")]

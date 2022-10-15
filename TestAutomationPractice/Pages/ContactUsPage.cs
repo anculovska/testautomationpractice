@@ -21,4 +21,6 @@ namespace TestAutomationPractice.Pages
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(contactPage));
         }
     }
+
 }
+
