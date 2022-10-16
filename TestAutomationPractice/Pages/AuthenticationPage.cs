@@ -11,7 +11,8 @@ namespace TestAutomationPractice.Pages
         public By emailAdressField = By.Id("email");
         public By passwordField = By.Id("passwd");
         public By signInField = By.Id("SubmitLogin");
-        
+        public By emailAdressCreate = By.Id("email_create");
+        public By CreateAnAccountField = By.Id("SubmitCreate");
 
 
 

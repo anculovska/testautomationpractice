@@ -53,5 +53,11 @@ namespace TestAutomationPractice.Helpers
             return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator)).Displayed;
         }
 
+        public bool TextPresentInElement(string text)
+        {
+            By textElement = By.XPath("//*[contains(text(),'" + text + "')]");
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+            return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(textElement)).Displayed;
+        }
     }
 }

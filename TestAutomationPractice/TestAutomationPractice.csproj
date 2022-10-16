@@ -58,6 +58,7 @@
     <SpecFlowFeatureFiles Update="Features\My_Account.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>My_Account.feature.cs</LastGenOutput>
+      <Visible>False</Visible>
     </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
