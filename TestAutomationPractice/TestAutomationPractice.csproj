@@ -60,6 +60,11 @@
       <LastGenOutput>My_Account.feature.cs</LastGenOutput>
       <Visible>False</Visible>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PDP.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PDP.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Features\Search.feature.cs">
@@ -70,6 +75,9 @@
     </Compile>
     <Compile Update="Features\My_Account.feature.cs">
       <DependentUpon>My_Account.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PDP.feature.cs">
+      <DependentUpon>PDP.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
