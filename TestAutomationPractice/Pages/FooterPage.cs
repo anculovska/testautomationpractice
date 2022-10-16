@@ -26,7 +26,7 @@ namespace TestAutomationPractice.Pages
 
         public bool InformationPageIsDisplayed(string pageName)
         {
-            By page = By.XPath("//*[@class='navigation_page'][contains(text(),' " + pageName + "')]");
+            By page = By.XPath("//*[@class='navigation_page'][contains(text(),'" + pageName + "')]");
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
             return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(page)).Displayed;
         }
