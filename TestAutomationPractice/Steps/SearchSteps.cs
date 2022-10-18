@@ -28,7 +28,7 @@ namespace TestAutomationPractice.Steps
         [Then(@"results for '(.*)' search term are displayed")]
         public void ThenResultsForSearchTermAreDisplayed(string term)
         {
-           SearchResultsPage srp = new SearchResultsPage(Driver);
+            SearchResultsPage srp = new SearchResultsPage(Driver);
             Assert.That(ut.ReturnTextFromElement(srp.searchResult), Does.Contain(term), "Wrong search results are displayes");
         }
     }
