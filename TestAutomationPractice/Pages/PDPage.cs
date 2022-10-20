@@ -11,8 +11,8 @@ namespace TestAutomationPractice.Pages
         public By quantity = By.Id("quantity_wanted");
         public By productName = By.XPath("//h1[@itemprop='name']");
         public By addToCartBtn = By.Id("add_to_cart");
-        public By proceedToCheckoutBtn = By.ClassName("button-medium");
-        
+        //public By proceedToCheckoutBtn = By.ClassName("button-medium");
+        public By proceedToCheckoutBtn = By.XPath("//*[@title='Proceed to checkout']");
 
         public PDPage(IWebDriver driver)
         {
