@@ -18,4 +18,14 @@ Given user opens sign in page
 	And user enters all required personal details
 	When user submits the sign up form
 	Then user will be logged in
-	And user's full name is displayed 
+	And user's full name is displayed
+
+
+	Scenario: User can update last name 
+	And enters correct credentials
+	And user submits the login form
+	And user opens MY PERSONAL INFORMATION
+	When user enters new last name
+	And enters current password
+	And save the changes 
+	Then last name is updated

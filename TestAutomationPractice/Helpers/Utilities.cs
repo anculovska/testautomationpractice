@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -18,6 +19,14 @@ namespace TestAutomationPractice.Helpers
         public string GenerateRandomEmail()
         {
             return string.Format("email{0}@mailnator.com", RandomName.Next(10000, 1000000));
+        }
+
+
+        public string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[RandomName.Next(s.Length)]).ToArray());
         }
 
         public void ClickOnElement(By locator)

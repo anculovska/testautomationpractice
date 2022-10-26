@@ -34,7 +34,7 @@ namespace AutomationPracticeFramework.Steps
             ut.EnterTextInElement(ap.passwordField, TestConstants.CustomerPasswd);
         }
         
-        [When(@"user submits the login form")]
+        [StepDefinition(@"user submits the login form")]
         public void WhenUserSubmitsTheLoginForm()
         {
             AuthenticationPage ap = new AuthenticationPage(Driver);
@@ -86,6 +86,51 @@ namespace AutomationPracticeFramework.Steps
         {
             Assert.True(ut.TextPresentInElement(personData.FullName), "User's full name is not displayed in the header");
         }
+
+
+
+
+
+        [Given(@"user opens MY PERSONAL INFORMATION")]
+        public void GivenUserOpensPersonalInformation()
+        {
+            MyAccountPage mp = new MyAccountPage(Driver);
+            ut.ClickOnElement(mp.myPersonalInfoBtn);
+        }
+
+
+        [When(@"user enters new last name")]
+        public void WhenUserEntersNewLastname()
+        {
+            MyPersonalInfoPage mpi = new MyPersonalInfoPage(Driver);
+            Driver.FindElement(mpi.lastName).Clear(); //obrisali smo postojece prezime
+            personData.LastName = ut.RandomString(7);
+            ut.EnterTextInElement(mpi.lastName, personData.LastName);
+
+        }
+
+        [When(@"enters current password")]
+        public void WhenUserEntersCurrentPassw()
+        {
+            MyPersonalInfoPage mpi = new MyPersonalInfoPage(Driver);
+            ut.EnterTextInElement(mpi.currentPasswd, TestConstants.CustomerPasswd);
+        }
+
+        [When(@"save the changes")]
+        public void WhenUserSaveChanges()
+        {
+            MyPersonalInfoPage mpi = new MyPersonalInfoPage(Driver);
+            ut.ClickOnElement(mpi.saveBtn);
+        }
+
+        [Then(@"last name is updated")]
+        public void ThenUsersLastNameIsUpdated()
+        {
+            MyPersonalInfoPage mpi = new MyPersonalInfoPage(Driver);
+            Assert.That(ut.ReturnTextFromElement(mpi.myName), Does.Contain(personData.LastName), "Last name is not updated"); 
             
+        }
+
+
     }
 }

@@ -9,6 +9,9 @@ namespace TestAutomationPractice.Pages
         readonly IWebDriver driver;
         public By myAccountPage = By.Id("my-account");
         public By signOutBtn = By.ClassName("logout");
+        public By myPersonalInfoBtn = By.XPath("//*[contains(text(), 'My personal information')]");
+        
+
 
         public MyAccountPage(IWebDriver driver)
         {
